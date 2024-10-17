@@ -1,0 +1,40 @@
+/* header.component.css */
+
+/* Header container */
+.header {
+    display: flex;
+    justify-content: 20px; /* Space out logo and contacts */
+    align-items: center; /* Vertically center content */
+    background-color: #fff; /* White background */
+    padding: 10px 20px; /* Padding around the header */
+  
+    margin-left: 250px;
+    margin-right: 350px;
+    
+  }
+  
+  /* Logo container */
+  .logo-container {
+    flex: 1; /* Allows the logo container to take up available space */
+    margin-top: 40px;
+  }
+  
+  .logo {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .contacts {
+    display: flex; /* Arrange contact items in a row */
+    flex-direction: row; /* Align items horizontally */
+    gap: 5px; /* Space between contact items */
+    cursor: pointer;
+    margin:20px;
+    height: 55px;
+    margin-top: 40px;
+  }
+  
+  /* Individual contact item */
+  .contact img{
+    height: 200px;
+    width:200px;
+  }

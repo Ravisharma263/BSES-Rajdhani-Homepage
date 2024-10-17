@@ -1,0 +1,52 @@
+/* Container for all boxes */
+.image-boxes-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* Space between the boxes */
+    padding: 5px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 25px;
+    width: 930px;
+  }
+  
+  /* Individual box styling */
+  .image-box {
+    flex: 1;
+    min-width: 300px; /* Ensures minimum width for each box */
+    max-width: 30%; /* Ensures each box takes up to 30% of the container */
+    background-color: #fff; /* White background for each box */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures the image and content are contained within the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transform effect on hover */
+  }
+  
+  .image-box:hover {
+    transform: scale(1.05); /* Slightly enlarge box on hover */
+  }
+  
+  /* Image styling */
+  .image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Box content styling */
+  .box-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .box-content h3 {
+    margin: 0;
+    font-size: 1.25em;
+    color: #333; /* Dark text color */
+  }
+  
+  .box-content p {
+    margin: 10px 0 0;
+    color: #666; /* Light grey text color */
+  }
+  

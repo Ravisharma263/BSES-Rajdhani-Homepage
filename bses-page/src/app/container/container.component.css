@@ -1,0 +1,26 @@
+.container {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: flex-start; /* Align items at the start of the container */
+    width: 1150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 220px;
+    margin-right: 250px
+  
+     /* Adjust the top margin if needed */
+  }
+  
+  /* Banner styling */
+  .banner {
+    background-color: white;
+    padding: 20px;
+    flex: 1; /* Allow banner to grow and take available space */
+  }
+  
+  /* Image styling within the banner */
+  .bannerlogo {
+    width: 100%; /* Makes the image width 100% of its container */
+    max-width: 920px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    align-items: start;
+  }

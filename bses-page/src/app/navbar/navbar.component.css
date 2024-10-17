@@ -1,0 +1,105 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    background-color: #f2f2f2;
+    padding: 10px 0; /* Vertical padding for spacing */
+    margin-left: 250px;
+    margin-right: 250px;
+    height: 98px;
+    box-sizing: border-box;
+    width: 96px;
+    cursor: pointer;
+  }
+  
+  /* Flex container for aligning items */
+  .content {
+    display: flex;
+    position:absolute;
+    margin-left: -25px;
+   
+    width: 100%; /* Ensure the content takes full width of the navbar */
+    height: 100px;
+    margin-top: -18px;
+    margin-bottom: -18px;
+    margin-right: -25px;
+    gap: 0;
+  }
+  
+  /* Styling individual sections to be flexible and aligned */
+  .content div {
+   
+    align-items: center;
+  }
+  
+  /* Images styling within the navbar */
+  .content img {
+    height: 100px; /* Adjust height to fit within the navbar */
+    width: 155px;
+    /* Ensure images maintain aspect ratio */
+     /* Add some horizontal spacing around images */
+  }
+  
+/* Styling for the Payments container */
+.Payments {
+  position: relative; /* Enables absolute positioning of dropdown content */
+}
+
+/* Styling for the dropdown button container */
+.dropdown {
+  position: relative; /* Positions the dropdown content relative to this container */
+}
+
+/* Styling for the dropdown button */
+.dropdown-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Styling for the dropdown button image */
+.dropdown-button img {
+  height: 100px; /* Adjust image size as needed */
+  width: 155px;
+  object-fit: contain; /* Ensures the image retains its aspect ratio */
+}
+
+/* Initially hide the dropdown content */
+.dropdown-content {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  top: 100%; /* Position dropdown below the button */
+  left: 0; /* Align dropdown with the left edge of the button */
+  background-color: #ece5e5;
+  width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; /* Adds some rounding to the dropdown */
+  margin-left:8px;
+  border-top: #262525;
+}
+
+/* Styling for the links inside the dropdown */
+.dropdown-content a {
+  color: rgb(75, 73, 73);
+  padding: 3px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  border-top: #262525;
+ 
+}
+
+/* Changes background color of links on hover */
+.dropdown-content a:hover {
+  background-color: #e76767;
+}
+
+/* Show the dropdown content when hovering over the button or Payments container */
+.Payments:hover .dropdown-content,
+.dropdown:hover .dropdown-content {
+  display: block; /* Display dropdown content on hover */
+}
+

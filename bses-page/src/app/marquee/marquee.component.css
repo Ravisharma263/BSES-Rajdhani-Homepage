@@ -1,0 +1,16 @@
+.marquee-container {
+    background-color: white; /* Red background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 250px;
+    margin-right: 250px;
+    cursor:pointer
+  
+  }
+  
+  .marquee-text {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    
+  }

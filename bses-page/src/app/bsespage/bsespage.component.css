@@ -1,0 +1,376 @@
+/* header.component.css */
+
+/* Header container */
+.header {
+  display: flex;
+  justify-content: 20px; /* Space out logo and contacts */
+  align-items: center; /* Vertically center content */
+  background-color: #fff; /* White background */
+  padding: 10px 20px; /* Padding around the header */
+  border-bottom: 1px solid #ddd; /* Bottom border for separation */
+  margin-left: 250px;
+  margin-right: 250px;;
+}
+
+/* Logo container */
+.logo-container {
+  flex: 1; /* Allows the logo container to take up available space */
+}
+
+.logo {
+  max-width: 150px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Contacts container */
+.contacts {
+  display: flex; /* Arrange contact items in a row */
+  flex-direction: row; /* Align items horizontally */
+  gap: 5px; /* Space between contact items */
+  cursor: pointer;
+  margin:20px;
+}
+
+/* Individual contact item */
+.contact-info {
+  margin: 0;
+  font-size: 0.9em; /* Adjust font size */
+  color: #333; /* Dark text color */
+}
+
+.info-bar {
+  background-color:white; /* Dark background color */
+  padding: 10px 20px;
+  border-bottom: 2px solid #e74c3c; /* Red bottom border */
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Style for the list */
+.info-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: left; /* Center items horizontally */
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for list items */
+.info-bar ul li {
+  margin: 0 3px; /* Space between items */
+}
+
+/* Style for links */
+.info-bar ul li a {
+  color: #6b6969; /* White text color */
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.info-bar ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  background-color: #f2f2f2;
+  padding: 10px 0; /* Vertical padding for spacing */
+  margin-left: 250px;
+  margin-right: 250px;
+  height: 98px;
+  box-sizing: border-box;
+  width: 96px;
+  cursor: pointer;
+}
+
+/* Flex container for aligning items */
+.content {
+  display: flex;
+  margin-left: -25px;
+ 
+  width: 100%; /* Ensure the content takes full width of the navbar */
+  height: 100px;
+  margin-top: -18px;
+  margin-bottom: -18px;
+  margin-right: -25px;
+  gap: 0;
+}
+
+/* Styling individual sections to be flexible and aligned */
+.content div {
+  display: flex;
+  align-items: center;
+}
+
+/* Images styling within the navbar */
+.content img {
+  height: 100px; /* Adjust height to fit within the navbar */
+  width: 155px;
+  /* Ensure images maintain aspect ratio */
+   /* Add some horizontal spacing around images */
+}
+
+/* Dropdown section styles */
+/* Payments section styling */
+/* Payments section styling */
+/* Payments section styling */
+.Payments {
+  position: relative; /* Set this to handle absolute positioning of dropdown */
+  height: 100%;
+}
+
+/* Dropdown content initially hidden */
+.dropdown-content {
+  display: none; /* Initially hide the dropdown */
+  position: absolute;
+  top: 100%; /* Position dropdown below the button */
+  left: 0; /* Align dropdown with the left edge of the button */
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; /* Optional: add some rounding to the dropdown */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Change background on hover */
+}
+
+/* Hover effect to show dropdown */
+.Payments:hover .dropdown-content {
+  display: block; /* Show the dropdown when hovering over the Payments section */
+}
+
+/* Styles for the dropdown button/image */
+.dropdown-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0; /* Adjust if needed */
+  cursor: pointer;
+}
+
+/* Button hover state */
+.dropdown-button:hover {
+  background-color: white; /* Optional: change background color on hover */
+}
+
+.dropdown-button img {
+  height: 100px; /* Same as other images for consistent sizing */
+  width: 155px;
+  object-fit: contain;
+}
+
+/* Container for banner and buttons */
+.container {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: flex-start; /* Align items at the start of the container */
+  width: 1150px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 220px;
+  margin-right: 250px
+
+   /* Adjust the top margin if needed */
+}
+
+/* Banner styling */
+.banner {
+  background-color: white;
+  padding: 20px;
+  flex: 1; /* Allow banner to grow and take available space */
+}
+
+/* Image styling within the banner */
+.bannerlogo {
+  width: 100%; /* Makes the image width 100% of its container */
+  max-width: 920px; /* Set a maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+  align-items: start;
+}
+  .sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px; /* Width of the sidebar */
+    height: 500px; /* Height of the sidebar */
+    background-color: white; /* Background color */
+    padding-top: 20px;
+    margin-top: 173px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Arrange content vertically */
+  }
+
+
+  
+
+  .br{
+    text-align: center;
+  }
+  .span{
+    text-align: center;
+  }
+/* Buttons container styling */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 10px; /* Space between the banner and the buttons */
+  margin-right: 13px;
+
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left:130px;
+}
+
+.button-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Space between items */
+  cursor: pointer;
+}
+
+.button-container img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  display: block;
+}
+
+.button-container span {
+  position: absolute;
+  color: white; /* Text color */
+  font-size: 13px; /* Adjust the font size as needed */
+  text-align: center;
+  max-width: 90%; /* Ensures text fits within image */
+  padding: 5px; /* Space around text */
+
+  border-radius: 5px; /* Optional: rounded corners */
+  margin-bottom: 3px;
+}
+
+.buttons img {
+  height: 90px;
+  width: 80px;
+}
+
+/* Button styling */
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.marquee-container {
+  background-color: white; /* Red background */
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 250px;
+  margin-right: 250px;
+  cursor:pointer
+
+}
+
+.marquee-text {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+
+/* image-boxes.component.css */
+
+/* Container for all boxes */
+.image-boxes-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px; /* Space between the boxes */
+  padding: 5px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 25px;
+  width: 930px;
+}
+
+/* Individual box styling */
+.image-box {
+  flex: 1;
+  min-width: 300px; /* Ensures minimum width for each box */
+  max-width: 30%; /* Ensures each box takes up to 30% of the container */
+  background-color: #fff; /* White background for each box */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures the image and content are contained within the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s; /* Smooth transform effect on hover */
+}
+
+.image-box:hover {
+  transform: scale(1.05); /* Slightly enlarge box on hover */
+}
+
+/* Image styling */
+.image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Box content styling */
+.box-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.box-content h3 {
+  margin: 0;
+  font-size: 1.25em;
+  color: #333; /* Dark text color */
+}
+
+.box-content p {
+  margin: 10px 0 0;
+  color: #666; /* Light grey text color */
+}
+
+
+.footer {
+  text-align: left;
+
+  background-color: white;
+  color: rgb(117, 113, 113);
+  margin-left: 250px;
+  margin-right: 250px;
+  height: 70px;
+  border-top: 1px solid #ddd;  
+  font-size: 0.8em;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}

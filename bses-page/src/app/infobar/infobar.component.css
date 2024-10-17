@@ -1,0 +1,35 @@
+.info-bar {
+    background-color:white; /* Dark background color */
+    padding: 10px 20px;
+    border-bottom: 2px solid #e74c3c; /* Red bottom border */
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+  
+  /* Style for the list */
+  .info-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: left; /* Center items horizontally */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style for list items */
+  .info-bar ul li {
+    margin: 0 3px; /* Space between items */
+  }
+  
+  /* Style for links */
+  .info-bar ul li a {
+    color: #6b6969; /* White text color */
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .info-bar ul li a:hover {
+    text-decoration: underline;
+  }
+  

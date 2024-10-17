@@ -1,0 +1,81 @@
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px; /* Width of the sidebar */
+    height: 500px; /* Height of the sidebar */
+    background-color: white; /* Background color */
+    padding-top: 20px;
+    margin-top: 173px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Arrange content vertically */
+  }
+
+
+  
+
+  .br{
+    text-align: center;
+  }
+  .span{
+    text-align: center;
+  }
+/* Buttons container styling */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 10px; /* Space between the banner and the buttons */
+  margin-right: 13px;
+
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left:130px;
+}
+
+.button-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Space between items */
+  cursor: pointer;
+}
+
+.button-container img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  display: block;
+}
+
+.button-container span {
+  position: absolute;
+  color: white; /* Text color */
+  font-size: 13px; /* Adjust the font size as needed */
+  text-align: center;
+  max-width: 90%; /* Ensures text fits within image */
+  padding: 5px; /* Space around text */
+
+  border-radius: 5px; /* Optional: rounded corners */
+  margin-bottom: 3px;
+}
+
+.buttons img {
+  height: 90px;
+  width: 80px;
+}
+
+/* Button styling */
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 1px;
+}
